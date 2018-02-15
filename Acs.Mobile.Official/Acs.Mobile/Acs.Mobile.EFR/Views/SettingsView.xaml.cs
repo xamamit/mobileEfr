@@ -84,7 +84,7 @@ namespace Acs.Mobile.EFR.Views
 
         async void OnBackButtonClicked(object sender, EventArgs e)
         {
-           // Application.Current.MainPage = new NavigationPage(new MainViewsMasters());
+                 //Application.Current.MainPage = new NavigationPage(new MainViewsMasters());
           
             await Navigation.PopAsync();
             await Navigation.PushAsync(new MainViewsMasters());

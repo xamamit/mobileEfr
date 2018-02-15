@@ -3,7 +3,7 @@
     <Files>
       <File FileName="Acs.Mobile/Acs.Mobile.EFR/Views/MainView.xaml.cs" Line="498" Column="50" />
       <File FileName="Acs.Mobile/Acs.Mobile.EFR/Views/LoginView.xaml.cs" Line="126" Column="1" />
-      <File FileName="Acs.Mobile/Acs.Mobile.EFR/Views/SettingsView.xaml.cs" Line="106" Column="32" />
+      <File FileName="Acs.Mobile/Acs.Mobile.EFR/Views/SettingsView.xaml.cs" Line="17" Column="73" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -11,6 +11,6 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Acs.Mobile.EFR.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.ItemProperties.Acs.Mobile.EFR.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
   <MultiItemStartupConfigurations />
 </Properties>

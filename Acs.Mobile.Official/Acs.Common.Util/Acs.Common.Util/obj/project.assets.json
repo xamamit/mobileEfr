@@ -3703,19 +3703,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/amitkumar/.nuget/packages/": {}
+    "/Users/admin/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/amitkumar/Documents/Michael/2018/feb/14/Acs.Mobile.Official/Acs.Mobile.Official/Acs.Common.Util/Acs.Common.Util/Acs.Common.Util.csproj",
+      "projectUniqueName": "/Users/admin/Documents/acessEfr/mobileEfr/Acs.Mobile.Official/Acs.Common.Util/Acs.Common.Util/Acs.Common.Util.csproj",
       "projectName": "Acs.Common.Util",
-      "projectPath": "/Users/amitkumar/Documents/Michael/2018/feb/14/Acs.Mobile.Official/Acs.Mobile.Official/Acs.Common.Util/Acs.Common.Util/Acs.Common.Util.csproj",
-      "packagesPath": "/Users/amitkumar/.nuget/packages/",
-      "outputPath": "/Users/amitkumar/Documents/Michael/2018/feb/14/Acs.Mobile.Official/Acs.Mobile.Official/Acs.Common.Util/Acs.Common.Util/obj",
+      "projectPath": "/Users/admin/Documents/acessEfr/mobileEfr/Acs.Mobile.Official/Acs.Common.Util/Acs.Common.Util/Acs.Common.Util.csproj",
+      "packagesPath": "/Users/admin/.nuget/packages/",
+      "outputPath": "/Users/admin/Documents/acessEfr/mobileEfr/Acs.Mobile.Official/Acs.Common.Util/Acs.Common.Util/obj",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/amitkumar/.config/NuGet/NuGet.Config"
+        "/Users/admin/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard1.4"

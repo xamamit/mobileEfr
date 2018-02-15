@@ -2276,7 +2276,7 @@
       ]
     },
     "Newtonsoft.Json/10.0.3": {
-      "sha512": "wBM7i7i3U2WX0ecor4zdVGvgrwFUjuigBoHKiL+nH39fCOpCPjBY3RDqJM32edvdyTAVdjzlccHsg41+/+zpSA==",
+      "sha512": "hSXaFmh7hNCuEoC4XNY5DrRkLDzYHqPx/Ik23R4J86Z7PE/Y6YidhG602dFVdLBRSdG6xp9NabH3dXpcoxWvww==",
       "type": "package",
       "path": "newtonsoft.json/10.0.3",
       "files": [
@@ -5834,18 +5834,18 @@
     "Xamarin.iOS,Version=v1.0": []
   },
   "packageFolders": {
-    "/Users/amitkumar/.nuget/packages/": {}
+    "/Users/admin/.nuget/packages/": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "/Users/amitkumar/Documents/Michael/2018/feb/14/Acs.Mobile.Official/Acs.Mobile.Official/Acs.Mobile/Acs.Mobile.EFR.iOS/Acs.Mobile.EFR.iOS.csproj",
+      "projectUniqueName": "/Users/admin/Documents/acessEfr/mobileEfr/Acs.Mobile.Official/Acs.Mobile/Acs.Mobile.EFR.iOS/Acs.Mobile.EFR.iOS.csproj",
       "projectName": "Acs.Mobile.EFR.iOS",
-      "projectPath": "/Users/amitkumar/Documents/Michael/2018/feb/14/Acs.Mobile.Official/Acs.Mobile.Official/Acs.Mobile/Acs.Mobile.EFR.iOS/Acs.Mobile.EFR.iOS.csproj",
-      "projectJsonPath": "/Users/amitkumar/Documents/Michael/2018/feb/14/Acs.Mobile.Official/Acs.Mobile.Official/Acs.Mobile/Acs.Mobile.EFR.iOS/project.json",
-      "packagesPath": "/Users/amitkumar/.nuget/packages/",
+      "projectPath": "/Users/admin/Documents/acessEfr/mobileEfr/Acs.Mobile.Official/Acs.Mobile/Acs.Mobile.EFR.iOS/Acs.Mobile.EFR.iOS.csproj",
+      "projectJsonPath": "/Users/admin/Documents/acessEfr/mobileEfr/Acs.Mobile.Official/Acs.Mobile/Acs.Mobile.EFR.iOS/project.json",
+      "packagesPath": "/Users/admin/.nuget/packages/",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
-        "/Users/amitkumar/.config/NuGet/NuGet.Config"
+        "/Users/admin/.config/NuGet/NuGet.Config"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}

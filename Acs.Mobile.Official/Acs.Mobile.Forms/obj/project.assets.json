@@ -11,7 +11,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "NETStandard.Library/2.0.1": {
+      "NETStandard.Library/2.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
@@ -59,10 +59,10 @@
         "runtime.json"
       ]
     },
-    "NETStandard.Library/2.0.1": {
-      "sha512": "oA6nwv9MhEKYvLpjZ0ggSpb1g4CQViDVQjLUcDWg598jtvJbpfeP2reqwI1GLW2TbxC/Ml7xL6BBR1HmKPXlTg==",
+    "NETStandard.Library/2.0.0": {
+      "sha512": "7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
       "type": "package",
-      "path": "netstandard.library/2.0.1",
+      "path": "netstandard.library/2.0.0",
       "files": [
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -183,7 +183,7 @@
         "build/netstandard2.0/ref/netstandard.dll",
         "build/netstandard2.0/ref/netstandard.xml",
         "lib/netstandard1.0/_._",
-        "netstandard.library.2.0.1.nupkg.sha512",
+        "netstandard.library.2.0.0.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
     },
@@ -376,24 +376,24 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.1",
+      "NETStandard.Library >= 2.0.0",
       "Xamarin.Forms >= 2.5.0.122203"
     ]
   },
   "packageFolders": {
-    "/Users/amitkumar/.nuget/packages/": {}
+    "/Users/admin/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/amitkumar/Documents/Michael/2018/feb/14/Acs.Mobile.Official/Acs.Mobile.Official/Acs.Mobile.Forms/Acs.Mobile.Forms.csproj",
+      "projectUniqueName": "/Users/admin/Documents/acessEfr/mobileEfr/Acs.Mobile.Official/Acs.Mobile.Forms/Acs.Mobile.Forms.csproj",
       "projectName": "Acs.Mobile.Forms",
-      "projectPath": "/Users/amitkumar/Documents/Michael/2018/feb/14/Acs.Mobile.Official/Acs.Mobile.Official/Acs.Mobile.Forms/Acs.Mobile.Forms.csproj",
-      "packagesPath": "/Users/amitkumar/.nuget/packages/",
-      "outputPath": "/Users/amitkumar/Documents/Michael/2018/feb/14/Acs.Mobile.Official/Acs.Mobile.Official/Acs.Mobile.Forms/obj",
+      "projectPath": "/Users/admin/Documents/acessEfr/mobileEfr/Acs.Mobile.Official/Acs.Mobile.Forms/Acs.Mobile.Forms.csproj",
+      "packagesPath": "/Users/admin/.nuget/packages/",
+      "outputPath": "/Users/admin/Documents/acessEfr/mobileEfr/Acs.Mobile.Official/Acs.Mobile.Forms/obj",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/amitkumar/.config/NuGet/NuGet.Config"
+        "/Users/admin/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -418,7 +418,7 @@
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.1",
+            "version": "2.0.0",
             "autoReferenced": true
           },
           "Xamarin.Forms": {

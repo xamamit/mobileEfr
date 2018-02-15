@@ -1302,7 +1302,7 @@
       ]
     },
     "Newtonsoft.Json/10.0.3": {
-      "sha512": "wBM7i7i3U2WX0ecor4zdVGvgrwFUjuigBoHKiL+nH39fCOpCPjBY3RDqJM32edvdyTAVdjzlccHsg41+/+zpSA==",
+      "sha512": "hSXaFmh7hNCuEoC4XNY5DrRkLDzYHqPx/Ik23R4J86Z7PE/Y6YidhG602dFVdLBRSdG6xp9NabH3dXpcoxWvww==",
       "type": "package",
       "path": "newtonsoft.json/10.0.3",
       "files": [
@@ -4559,19 +4559,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/amitkumar/.nuget/packages/": {}
+    "/Users/admin/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/amitkumar/Documents/Michael/2018/feb/14/Acs.Mobile.Official/Acs.Mobile.Official/Acs.Services/Acs.Services/Acs.Services.csproj",
+      "projectUniqueName": "/Users/admin/Documents/acessEfr/mobileEfr/Acs.Mobile.Official/Acs.Services/Acs.Services/Acs.Services.csproj",
       "projectName": "Acs.Services",
-      "projectPath": "/Users/amitkumar/Documents/Michael/2018/feb/14/Acs.Mobile.Official/Acs.Mobile.Official/Acs.Services/Acs.Services/Acs.Services.csproj",
-      "packagesPath": "/Users/amitkumar/.nuget/packages/",
-      "outputPath": "/Users/amitkumar/Documents/Michael/2018/feb/14/Acs.Mobile.Official/Acs.Mobile.Official/Acs.Services/Acs.Services/obj",
+      "projectPath": "/Users/admin/Documents/acessEfr/mobileEfr/Acs.Mobile.Official/Acs.Services/Acs.Services/Acs.Services.csproj",
+      "packagesPath": "/Users/admin/.nuget/packages/",
+      "outputPath": "/Users/admin/Documents/acessEfr/mobileEfr/Acs.Mobile.Official/Acs.Services/Acs.Services/obj",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/amitkumar/.config/NuGet/NuGet.Config"
+        "/Users/admin/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard1.4"
@@ -4582,11 +4582,11 @@
       "frameworks": {
         "netstandard1.4": {
           "projectReferences": {
-            "/Users/amitkumar/Documents/Michael/2018/feb/14/Acs.Mobile.Official/Acs.Mobile.Official/Acs.Common.Util/Acs.Common.Util/Acs.Common.Util.csproj": {
-              "projectPath": "/Users/amitkumar/Documents/Michael/2018/feb/14/Acs.Mobile.Official/Acs.Mobile.Official/Acs.Common.Util/Acs.Common.Util/Acs.Common.Util.csproj"
+            "/Users/admin/Documents/acessEfr/mobileEfr/Acs.Mobile.Official/Acs.Common.Util/Acs.Common.Util/Acs.Common.Util.csproj": {
+              "projectPath": "/Users/admin/Documents/acessEfr/mobileEfr/Acs.Mobile.Official/Acs.Common.Util/Acs.Common.Util/Acs.Common.Util.csproj"
             },
-            "/Users/amitkumar/Documents/Michael/2018/feb/14/Acs.Mobile.Official/Acs.Mobile.Official/Acs.Domain/Acs.Domain.Models/Acs.Domain.Models.csproj": {
-              "projectPath": "/Users/amitkumar/Documents/Michael/2018/feb/14/Acs.Mobile.Official/Acs.Mobile.Official/Acs.Domain/Acs.Domain.Models/Acs.Domain.Models.csproj"
+            "/Users/admin/Documents/acessEfr/mobileEfr/Acs.Mobile.Official/Acs.Domain/Acs.Domain.Models/Acs.Domain.Models.csproj": {
+              "projectPath": "/Users/admin/Documents/acessEfr/mobileEfr/Acs.Mobile.Official/Acs.Domain/Acs.Domain.Models/Acs.Domain.Models.csproj"
             }
           }
         }

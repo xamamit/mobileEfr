@@ -6777,18 +6777,18 @@
     "MonoAndroid,Version=v8.0": []
   },
   "packageFolders": {
-    "/Users/amitkumar/.nuget/packages/": {}
+    "/Users/admin/.nuget/packages/": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "/Users/amitkumar/Documents/Michael/2018/feb/14/Acs.Mobile.Official/Acs.Mobile.Official/Acs.Mobile/Acs.Mobile.EFR.Droid/Acs.Mobile.EFR.Droid.csproj",
+      "projectUniqueName": "/Users/admin/Documents/acessEfr/mobileEfr/Acs.Mobile.Official/Acs.Mobile/Acs.Mobile.EFR.Droid/Acs.Mobile.EFR.Droid.csproj",
       "projectName": "Acs.Mobile.EFR.Droid",
-      "projectPath": "/Users/amitkumar/Documents/Michael/2018/feb/14/Acs.Mobile.Official/Acs.Mobile.Official/Acs.Mobile/Acs.Mobile.EFR.Droid/Acs.Mobile.EFR.Droid.csproj",
-      "projectJsonPath": "/Users/amitkumar/Documents/Michael/2018/feb/14/Acs.Mobile.Official/Acs.Mobile.Official/Acs.Mobile/Acs.Mobile.EFR.Droid/project.json",
-      "packagesPath": "/Users/amitkumar/.nuget/packages/",
+      "projectPath": "/Users/admin/Documents/acessEfr/mobileEfr/Acs.Mobile.Official/Acs.Mobile/Acs.Mobile.EFR.Droid/Acs.Mobile.EFR.Droid.csproj",
+      "projectJsonPath": "/Users/admin/Documents/acessEfr/mobileEfr/Acs.Mobile.Official/Acs.Mobile/Acs.Mobile.EFR.Droid/project.json",
+      "packagesPath": "/Users/admin/.nuget/packages/",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
-        "/Users/amitkumar/.config/NuGet/NuGet.Config"
+        "/Users/admin/.config/NuGet/NuGet.Config"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
