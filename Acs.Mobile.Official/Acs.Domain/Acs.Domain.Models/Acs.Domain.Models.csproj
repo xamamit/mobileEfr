@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+    <Authors>Access IT</Authors>
+    <Company>Access</Company>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <IntermediateOutputPath>obj\iPhoneSimulator\Debug</IntermediateOutputPath>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType></DebugType>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants></DefineConstants>
+    <NoWarn></NoWarn>
+    <NoStdLib>false</NoStdLib>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <None Remove="Models\**" />
+  </ItemGroup>
+</Project>

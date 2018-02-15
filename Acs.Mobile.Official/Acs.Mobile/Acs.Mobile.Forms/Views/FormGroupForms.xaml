@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Local.View:ViewBase
+    x:Class="Acs.Mobile.ESig.Views.FormGroupForms"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:Local.View="clr-namespace:Acs.Mobile.ESig.Views.Base"
+    xmlns:Local.ViewModel="clr-namespace:Acs.Mobile.ESig.ViewModels"
+    xmlns:res="clr-namespace:Acs.Mobile.ESig.Resources"
+    x:TypeArguments="Local.ViewModel:LoginViewModel">
+    <ContentPage.Content>
+        <StackLayout Margin="0" Spacing="0">
+            <StackLayout>
+                <ActivityIndicator
+                    x:Name="ac"
+                    HorizontalOptions="CenterAndExpand"
+                    IsRunning="true"
+                    IsVisible="true"
+                    VerticalOptions="CenterAndExpand"
+                    Color="{res:Translate ActivityIndicatorColor}" />
+            </StackLayout>
+            <StackLayout
+                x:Name="stkFinal"
+                IsVisible="false"
+                VerticalOptions="FillAndExpand">
+
+
+
+
+                <ListView
+                    x:Name="listForms"
+                    CachingStrategy="RecycleElement"
+                    HasUnevenRows="true"
+                    IsPullToRefreshEnabled="false">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Padding="5,5,5,5" HorizontalOptions="StartAndExpand">
+                                    <Label
+                                        x:Name="lblName"
+                                        HorizontalTextAlignment="Start"
+                                        Text="{Binding Name}" />
+                                    <Label
+                                        x:Name="lblDescription"
+                                        HorizontalTextAlignment="Start"
+                                        Text="{Binding Description}" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+
+                </ListView>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</Local.View:ViewBase>

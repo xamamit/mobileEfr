@@ -1,0 +1,17 @@
+﻿{
+  "supports": {},
+  "dependencies": {
+    "Acr.DeviceInfo": "5.0.5",
+    "Acr.UserDialogs": "6.5.1",
+    "Autofac": "4.6.2",
+    "Xam.FormsPlugin.Iconize": "1.0.10",
+    "Xamarin.Forms": "2.5.0.122203",
+    "ZXing.Net.Mobile": "2.3.2",
+    "ZXing.Net.Mobile.Forms": "2.3.2"
+  },
+  "frameworks": {
+    "netstandard1.4": {
+      "imports": "portable-win+net45+wp8+win81+wpa8"
+    }
+  }
+}

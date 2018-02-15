@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup Label="Globals">
+      <SccProjectName>SAK</SccProjectName>
+      <SccProvider>SAK</SccProvider>
+      <SccAuxPath>SAK</SccAuxPath>
+      <SccLocalPath>SAK</SccLocalPath>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <TargetFramework>netstandard1.6</TargetFramework>
+        <PackageTargetFallback>$(PackageTargetFallback);portable-win+net45+wp8+win81+wpa8</PackageTargetFallback>
+    </PropertyGroup>
+
+
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+      <IntermediateOutputPath>obj\iPhoneSimulator\Debug</IntermediateOutputPath>
+      <DebugSymbols>false</DebugSymbols>
+      <DebugType></DebugType>
+      <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+      <DefineConstants></DefineConstants>
+      <NoWarn></NoWarn>
+      <NoStdLib>false</NoStdLib>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+      <Compile Remove="Validations\**" />
+      <EmbeddedResource Remove="Validations\**" />
+      <None Remove="Validations\**" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="Behaviors\Base\" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
+    </ItemGroup>
+
+</Project>

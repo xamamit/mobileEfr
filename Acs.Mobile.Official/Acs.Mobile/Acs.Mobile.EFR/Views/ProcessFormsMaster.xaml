@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<MasterDetailPage
+    x:Class="Acs.Mobile.EFR.Views.ProcessFormsMaster"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu" BackgroundColor="#e8e8e8">
+
+            <StackLayout Orientation="Vertical">
+
+                <ListView
+                    x:Name="navigationDrawerList"
+                    BackgroundColor="#e8e8e8"
+                    ItemSelected="OnMenuItemSelected"
+                    RowHeight="60"
+                    SeparatorVisibility="None">
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+
+                                <StackLayout
+                                    Padding="20,5,0,5"
+                                    Orientation="Horizontal"
+                                    Spacing="20"
+                                    VerticalOptions="FillAndExpand">
+
+                                    <Label
+                                        FontSize="Medium"
+                                        IsEnabled="{Binding IsItemVisible}"
+                                        IsVisible="{Binding IsItemVisible}"
+                                        Text="{Binding ItemTitle}"
+                                        TextColor="Black"
+                                        VerticalOptions="Center" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+</MasterDetailPage>

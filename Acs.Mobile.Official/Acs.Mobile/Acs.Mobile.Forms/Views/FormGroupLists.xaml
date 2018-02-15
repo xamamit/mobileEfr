@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Local.View:ViewBase 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="Acs.Mobile.ESig.Views.FormGroupLists"
+     x:TypeArguments="Local.ViewModel:LoginViewModel"
+     xmlns:Local.View="clr-namespace:Acs.Mobile.ESig.Views.Base"
+      xmlns:Local.ViewModel="clr-namespace:Acs.Mobile.ESig.ViewModels"
+      xmlns:res="clr-namespace:Acs.Mobile.ESig.Resources"
+	>
+	<ContentPage.Content>
+		<StackLayout Spacing="0" Margin="0">
+       
+        <ActivityIndicator x:Name="ac" IsRunning="true" IsVisible="true" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Color="{res:Translate ActivityIndicatorColor}"></ActivityIndicator>
+
+        <StackLayout x:Name="stkFinal" IsVisible="false" VerticalOptions="FillAndExpand">
+
+
+            <ListView x:Name="listForms" HasUnevenRows="true"  IsPullToRefreshEnabled="false"  CachingStrategy="RecycleElement">
+            <ListView.ItemTemplate>
+                    <DataTemplate>
+                      <ViewCell>
+                            <StackLayout HorizontalOptions="StartAndExpand" Padding="5,5,5,5">
+                                <Label HorizontalTextAlignment="Start" x:Name="lblName" Text="{Binding Name}"/>
+                                  <Label HorizontalTextAlignment="Start" x:Name="lblDescription" Text="{Binding Description}"></Label> 
+                            </StackLayout>
+                     </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+            </StackLayout>
+			</StackLayout>
+	</ContentPage.Content>
+</Local.View:ViewBase>

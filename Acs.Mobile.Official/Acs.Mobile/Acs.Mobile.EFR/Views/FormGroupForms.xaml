@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Local.View:ViewBase
+    x:Class="Acs.Mobile.EFR.Views.FormGroupForms"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:Local.View="clr-namespace:Acs.Mobile.EFR.Views.Base"
+    xmlns:Local.ViewModel="clr-namespace:Acs.Mobile.EFR.ViewModels"
+    x:TypeArguments="Local.ViewModel:LoginViewModel">
+
+    <ContentPage.Content>
+        <StackLayout Margin="0" Spacing="0">
+            <StackLayout>
+                <ActivityIndicator
+                    x:Name="ac"
+                    HorizontalOptions="CenterAndExpand"
+                    IsRunning="true"
+                    IsVisible="true"
+                    VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+
+            <!--  List of forms  -->
+            <StackLayout
+                x:Name="stkFinal"
+                IsVisible="false"
+                VerticalOptions="FillAndExpand">
+
+                <ListView
+                    x:Name="listForms"
+                    CachingStrategy="RecycleElement"
+                    HasUnevenRows="true"
+                    IsPullToRefreshEnabled="false">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <!--  Name and Description  -->
+                                <StackLayout Padding="20,10,5,10" HorizontalOptions="StartAndExpand">
+                                    <Label
+                                        x:Name="lblName"
+                                        FontAttributes="Bold"
+                                        FontSize="15"
+                                        HorizontalTextAlignment="Start"
+                                        Text="{Binding Name}" />
+                                    <Label
+                                        x:Name="lblDescription"
+                                        Margin="10,0,0,0"
+                                        FontSize="13"
+                                        HorizontalTextAlignment="Start"
+                                        Text="{Binding Description}" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+
+                </ListView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</Local.View:ViewBase>

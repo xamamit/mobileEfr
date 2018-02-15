@@ -1,0 +1,11 @@
+
+
+// Upgrading portable to Standard:
+    https://xamarinhelp.com/upgrade-pcl-net-standard-class-library/
+
+// Standard libraries with Xamarin Forms:
+    https://xamarinhelp.com/visual-studio-2017-net-standard-xamarin/
+
+
+// Use SVG
+    https://components.xamarin.com/view/xamsvg

@@ -1,0 +1,37 @@
+﻿{
+  "dependencies": {
+    "Acr.DeviceInfo": "5.0.5",
+    "Acr.Settings": "6.0.0",
+    "Acr.UserDialogs": "6.5.1",
+    "Autofac": "4.6.2",
+    "Newtonsoft.Json": "10.0.1",
+    "Xam.FormsPlugin.Iconize": "1.0.10",
+    "Xam.Plugin.Geolocator": "4.2.0",
+    "Xam.Plugin.Iconize": "1.0.10",
+    "Xam.Plugin.Iconize.EntypoPlus": "1.0.10",
+    "Xam.Plugin.Iconize.FontAwesome": "1.0.10",
+    "Xam.Plugin.Iconize.Ionicons": "1.0.10",
+    "Xam.Plugin.Iconize.Material": "1.0.10",
+    "Xam.Plugin.Iconize.Meteocons": "1.0.10",
+    "Xam.Plugin.Iconize.SimpleLineIcons": "1.0.10",
+    "Xam.Plugin.Iconize.Typicons": "1.0.10",
+    "Xam.Plugin.Iconize.WeatherIcons": "1.0.10",
+    "Xamarin.Android.Support.Animated.Vector.Drawable": "26.1.0.1",
+    "Xamarin.Android.Support.Design": "26.1.0.1",
+    "Xamarin.Android.Support.v4": "26.1.0.1",
+    "Xamarin.Android.Support.v7.AppCompat": "26.1.0.1",
+    "Xamarin.Android.Support.v7.CardView": "26.1.0.1",
+    "Xamarin.Android.Support.v7.MediaRouter": "26.1.0.1",
+    "Xamarin.Android.Support.v7.RecyclerView": "26.1.0.1",
+    "Xamarin.Android.Support.Vector.Drawable": "26.1.0.1",
+    "Xamarin.Forms": "2.5.0.122203",
+    "ZXing.Net.Mobile": "2.3.2",
+    "ZXing.Net.Mobile.Forms": "2.3.2"
+  },
+  "frameworks": {
+    "MonoAndroid,Version=v8.0": {}
+  },
+  "runtimes": {
+    "win": {}
+  }
+}

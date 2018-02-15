@@ -1,0 +1,6 @@
+﻿<Application
+    x:Class="Acs.Mobile.EFR.UWP.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Acs.Mobile.EFR.UWP"
+    RequestedTheme="Light" />

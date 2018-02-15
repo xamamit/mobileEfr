@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="Acs.Mobile.ESig.Views.AbouttView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="About">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10,0,10,10">
+                <StackLayout Padding="0,20,0,0">
+                    <Label Text="Access Passport - E-Signature" />
+                </StackLayout>
+                <StackLayout Padding="0,20,0,0" Orientation="Horizontal">
+                    <Label FontAttributes="Bold" Text="Application Version: " />
+                    <Label x:Name="lblappVersion" Text="v1.0.14" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label FontAttributes="Bold" Text="Device Id:" />
+                    <Label x:Name="lblDeviceId" Text="8EC95924-D111-4082-B99A-3A6600AD41F8" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label FontAttributes="Bold" Text="Device Platform :" />
+                    <Label x:Name="lblDevicePlatform" Text="iOS" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label FontAttributes="Bold" Text="Device Model :" />
+                    <Label x:Name="lblDeviceModel" Text="iPHONE6,2" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label FontAttributes="Bold" Text="Device Version :" />
+                    <Label x:Name="lblDeviceVersion" Text="10.3.3" />
+                </StackLayout>
+
+                <StackLayout Padding="0,20,0,0">
+                    <Label FontAttributes="Bold" Text="COPYRIGHT" />
+                    <Label Text="2015 Access. All rights reserved. Access e-Forms is a registered trademark of Access in the United States and in other countries. All other product and company names may be trademarks of their respective owners." />
+                </StackLayout>
+
+                <StackLayout Padding="0,20,0,0">
+                    <Label FontAttributes="Bold" Text="APP DESCRIPTION" />
+                    <Label Text="The Acess Passport- E-Signature app enables authorized users to capture electronic signatures directly on electronic forms using an Apple iPhone or IPad. So regardless of where they are, staff can:" />
+                    <Label Margin="10,0,0,0" Text="&#x2022; Work with e-forms that need signatures and review their status at a glance" />
+                    <Label Margin="10,0,0,0" Text=" &#x2022; Apply paper-like e-signatures directly onto e-forms using the touch screen" />
+
+
+
+                    <Label Margin="10,0,0,0" Text=" &#x2022; Collect e-signatures at the point of need without having to print the form E-Signature is a key element of Access Passport, the innovative web based forms solution that removes ALL paper from forms processes- making then completely electrinic from start to finish. With access passport users can:  " />
+                    <Label Margin="10,0,0,0" Text=" &#x2022; Access the e-forms they need easily from virtually any device and location" />
+                    <Label Margin="10,0,0,0" Text=" &#x2022; Collect information in e-forms and add attachments in record time" />
+                    <Label Margin="10,0,0,0" Text=" &#x2022; Capture electronic signatures directly on forms without paper and ink Once an e-form is complete, Access Passport can:" />
+                    <Label Margin="10,0,0,0" Text=" &#x2022;Automate workflow dynamically using data captured in e-forms" />
+                    <Label Margin="10,0,0,0" Text=" &#x2022; Deliver completed forms and data to the people and systems that need it " />
+
+
+                    <Label Margin="10,0,0,0" Text="&#x2022; Track forms throughout their life cycle and perform many other valuable tasks" />
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

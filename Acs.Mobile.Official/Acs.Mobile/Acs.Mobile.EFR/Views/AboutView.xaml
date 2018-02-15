@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Local.View:ViewBase
+    x:Class="Acs.Mobile.EFR.Views.AboutView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:Local.View="clr-namespace:Acs.Mobile.EFR.Views.Base"
+    xmlns:Local.ViewModel="clr-namespace:Acs.Mobile.EFR.ViewModels"
+    x:TypeArguments="Local.ViewModel:AboutViewModel"
+  >
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10,0,10,10">
+                <StackLayout Padding="0,20,0,0">
+                    <Label Text="Access Passport - EFR" />
+                </StackLayout>
+                <StackLayout Padding="0,20,0,0" Orientation="Horizontal">
+                    <Label FontAttributes="Bold" Text="Application Version: " />
+                    <Label x:Name="lblappVersion" Text="{Binding AppVersion}" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label FontAttributes="Bold" Text="Device Id:" />
+                    <Label x:Name="lblDeviceId" Text="{Binding DeviceId}" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label FontAttributes="Bold" Text="Device Platform :" />
+                    <Label x:Name="lblDevicePlatform" Text="{Binding DevicePlatform}" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label FontAttributes="Bold" Text="Device Model :" />
+                    <Label x:Name="lblDeviceModel" Text="{Binding DeviceModel}" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label FontAttributes="Bold" Text="Device Version :" />
+                    <Label x:Name="lblDeviceVersion" Text="{Binding DeviceVersion}" />
+                </StackLayout>
+
+                <StackLayout Padding="0,20,0,0">
+                    <Label FontAttributes="Bold" Text="COPYRIGHT" />
+                    <Label Text="2018 Access. All rights reserved. Access eForms is a registered trademark of Access in the United States and in other countries. All other product and company names may be trademarks of their respective owners." />
+                </StackLayout>
+
+                <StackLayout Padding="0,20,0,0">
+                    <Label FontAttributes="Bold" Text="APP DESCRIPTION" />
+                    <Label Text="The Access Passport - EFR app enables authorized users to capture electronic signatures directly on electronic forms using a mobile device. So, regardless of where they are, staff can:" />
+
+                    <StackLayout Padding="0,10,0,0" Orientation="Horizontal">
+                        <Label Margin="10,0,0,0" Text="&#x2022;" />
+                        <Label Margin="5,0,0,0" Text="Work with e-forms that need signatures and review their status at a glance" />
+                    </StackLayout>
+                    <StackLayout Padding="0,10,0,0" Orientation="Horizontal">
+                        <Label Margin="10,0,0,0" Text="&#x2022;" />
+                        <Label Margin="5,0,0,0" Text="Apply paper-like eSignatures directly onto e-forms using the touch screen" />
+                    </StackLayout>
+                    <StackLayout Padding="0,10,0,0" Orientation="Horizontal">
+                        <Label Margin="10,0,0,0" Text="&#x2022;" />
+                        <Label Margin="5,0,0,0" Text="Collect eSignatures at the point of need without having to print the form" />
+                    </StackLayout>
+                    <!--<Label Margin="10,0,0,0" Text="&#x2022; Work with e-forms that need signatures and review their status at a glance" />-->
+                    <!--<Label Margin="10,0,0,0" Text=" &#x2022; Apply paper-like eSignatures directly onto e-forms using the touch screen" />-->
+                </StackLayout>
+
+                <StackLayout Padding="0,20,0,0">
+                    <Label FontAttributes="Bold" Text="ACCESS PASSPORT" />
+                    <Label Text="EFR is a key element of Access Passport, the innovative web based forms solution that removes ALL paper from forms processes- making then completely electronic from start to finish. With Access Passport users can:  " />
+
+                    <StackLayout Padding="0,10,0,0" Orientation="Horizontal">
+                        <Label Margin="10,0,0,0" Text="&#x2022;" />
+                        <Label Margin="5,0,0,0" Text="Access the e-forms they need easily from virtually any device and location" />
+                    </StackLayout>
+                    <StackLayout Padding="0,10,0,0" Orientation="Horizontal">
+                        <Label Margin="10,0,0,0" Text="&#x2022;" />
+                        <Label Margin="5,0,0,0" Text="Collect information in e-forms and add attachments in record time" />
+                    </StackLayout>
+                    <StackLayout Padding="0,10,0,0" Orientation="Horizontal">
+                        <Label Margin="10,0,0,0" Text="&#x2022;" />
+                        <Label Margin="5,0,0,0" Text="Capture electronic signatures directly on forms without paper and ink Once an e-form is complete" />
+                    </StackLayout>
+                    <StackLayout Padding="0,10,0,0" Orientation="Horizontal">
+                        <Label Margin="10,0,0,0" Text="&#x2022;" />
+                        <Label Margin="5,0,0,0" Text="Automate workflow dynamically using data captured in e-forms" />
+                    </StackLayout>
+                    <StackLayout Padding="0,10,0,0" Orientation="Horizontal">
+                        <Label Margin="10,0,0,0" Text="&#x2022;" />
+                        <Label Margin="5,0,0,0" Text="Deliver completed forms and data to the people and systems that need it" />
+                    </StackLayout>
+                    <StackLayout Padding="0,10,0,0" Orientation="Horizontal">
+                        <Label Margin="10,0,0,0" Text="&#x2022;" />
+                        <Label Margin="5,0,0,0" Text="Track forms throughout their life cycle and perform many other valuable tasks" />
+                    </StackLayout>
+
+                    <Label Margin="10,0,0,0" Text="&#x2022; Track forms throughout their life cycle and perform many other valuable tasks" />
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</Local.View:ViewBase>

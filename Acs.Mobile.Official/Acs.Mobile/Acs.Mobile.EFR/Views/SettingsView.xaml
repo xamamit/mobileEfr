@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Local.View:ViewBase
+    x:Class="Acs.Mobile.EFR.Views.SettingsView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:Local.View="clr-namespace:Acs.Mobile.EFR.Views.Base"
+    xmlns:Local.ViewModel="clr-namespace:Acs.Mobile.EFR.ViewModels"
+    x:TypeArguments="Local.ViewModel:RegisterationViewModel">
+
+    <!--  x:TypeArguments="Local.ViewModel:LoginViewModel">  -->
+
+    <StackLayout Padding="10,10,10,0">
+        <StackLayout VerticalOptions="Center">
+            <ActivityIndicator
+                x:Name="ac"
+                HorizontalOptions="CenterAndExpand"
+                IsRunning="true"
+                IsVisible="false"
+                VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+
+        <!--  Setting Fields  -->
+        <StackLayout x:Name="stkFinal">
+            <StackLayout Padding="0,30,0,0">
+                <Label FontSize="12" Text="URL" />
+                <Entry
+                    x:Name="passportServerURLEntry"
+                    HeightRequest="40"
+                    Text="https://passport-lab.accessefm.com" />
+            </StackLayout>
+
+            <StackLayout Padding="0,10,0,0">
+                <Label FontSize="12" Text="Domain Name" />
+                <Entry
+                    x:Name="domainNameEntry"
+                    HeightRequest="40"
+                    Text="accessefm" />
+            </StackLayout>
+            <!--  1/26/18 - this option is not being saved.  Hiding it for now, until we have time to look at it.  -->
+            <!--<StackLayout Padding="0,10,0,0">
+        <Label Text="Use System Browser" />
+        <Switch HorizontalOptions="Start" />
+      </StackLayout>-->
+
+            <StackLayout Padding="0,10,0,0">
+                <Label x:Name="errorMsgLabel" />
+            </StackLayout>
+
+            <!--  Save button  -->
+            <StackLayout Padding="0,20,0,0">
+                <Button
+                    x:Name="btnSave"
+                    Text="SAVE"
+                    TextColor="White" />
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+
+</Local.View:ViewBase>

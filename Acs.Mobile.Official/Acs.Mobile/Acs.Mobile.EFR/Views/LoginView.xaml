@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Local.View:ViewBase
+    x:Class="Acs.Mobile.EFR.Views.LoginView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:Local.View="clr-namespace:Acs.Mobile.EFR.Views.Base"
+    xmlns:Local.ViewModel="clr-namespace:Acs.Mobile.EFR.ViewModels"
+    x:TypeArguments="Local.ViewModel:LoginViewModel">
+
+    <StackLayout Padding="10,10,10,0">
+
+        <StackLayout x:Name="stkFinal">
+            <StackLayout Padding="0,30,0,0">
+                <Label FontSize="12" Text="USERNAME" />
+                <Entry
+                    x:Name="usernameEntry"
+                    HeightRequest="40"
+                    Text="administrator" />
+            </StackLayout>
+
+            <StackLayout Padding="0,10,0,0">
+                <Label FontSize="12" Text="PASSWORD" />
+                <Entry
+                    x:Name="passwordEntry"
+                    HeightRequest="40"
+                    IsPassword="true"
+                    Text="T3x4sP3t3" />
+
+                <Label x:Name="messageLabel" />
+            </StackLayout>
+
+            <StackLayout Padding="0,20,0,0">
+                <Button
+                    x:Name="btnLogin"
+                    IsEnabled="true"
+                    Text="LOGIN"
+                    TextColor="White" />
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</Local.View:ViewBase>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Local.View:ViewBase
+    x:Class="Acs.Mobile.EFR.Views.Forms"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:Local.View="clr-namespace:Acs.Mobile.EFR.Views.Base"
+    xmlns:Local.ViewModel="clr-namespace:Acs.Mobile.EFR.ViewModels"
+    x:TypeArguments="Local.ViewModel:LoginViewModel">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <ActivityIndicator
+                    x:Name="ac"
+                    HorizontalOptions="CenterAndExpand"
+                    IsRunning="true"
+                    IsVisible="true"
+                    VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+            <WebView
+                x:Name="webV"
+                IsVisible="true"
+                VerticalOptions="FillAndExpand" />
+            <StackLayout>
+                <Button
+                    x:Name="btnDone"
+                    Text="Done"
+                    TextColor="White" />
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</Local.View:ViewBase>

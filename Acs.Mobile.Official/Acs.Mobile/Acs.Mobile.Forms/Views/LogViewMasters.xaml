@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Acs.Mobile.ESig.Views.LogViewMasters">
+	<MasterDetailPage.Master>
+    <ContentPage Title="Menu"
+                 BackgroundColor="#e8e8e8">
+
+      <StackLayout Orientation="Vertical">
+       
+        
+        <ListView x:Name="navigationDrawerList"
+                  RowHeight="60"
+                  SeparatorVisibility="None"
+                  BackgroundColor="#e8e8e8"
+                  ItemSelected="OnMenuItemSelected">
+
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <ViewCell>
+                
+            
+                <StackLayout VerticalOptions="FillAndExpand"
+                             Orientation="Horizontal"
+                             Padding="20,10,0,10"
+                             Spacing="20">
+
+                
+                  <Label Text="{Binding Title}"
+                         FontSize="Medium"
+                         VerticalOptions="Center"
+                         TextColor="Black"
+                         IsVisible="{Binding isShown}"
+                                    />
+                </StackLayout>
+              </ViewCell>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+      </StackLayout>
+
+    </ContentPage>
+  </MasterDetailPage.Master>
+
+
+</MasterDetailPage>

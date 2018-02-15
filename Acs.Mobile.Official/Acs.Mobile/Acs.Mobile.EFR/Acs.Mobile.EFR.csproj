@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD2719F7-A5A5-4B9F-A4E9-71ABD30F7B74}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Acs.Mobile.EFR</RootNamespace>
+    <AssemblyName>Acs.Mobile.EFR</AssemblyName>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>false</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\AppContainer.cs" />
+    <Compile Include="Configuration\AppSetup.cs" />
+    <Compile Include="Helpers\AppStyle.cs" />
+    <Compile Include="Configuration\ServiceConfigurations.cs" />
+    <Compile Include="Models\SettingsModel.cs" />
+    <Compile Include="ViewModels\BarcodeScanViewModel.cs" />
+    <Compile Include="ViewModels\Base\IViewModel.cs" />
+    <Compile Include="Configuration\Constants.cs" />
+    <Compile Include="ViewModels\Base\ExtendedBindableObject.cs" />
+    <Compile Include="ViewModels\Base\ViewModelBase.cs" />
+    <Compile Include="ViewModels\RegisterationViewModel.cs" />
+    <Compile Include="ViewModels\SettingsViewModel.cs" />
+    <Compile Include="Views\Base\ViewBase.cs" />
+    <Compile Include="Models\AppSettingsModel.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\AuthViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="Behaviour\NumberValidationBehaviour.cs" />
+    <Compile Include="Behaviour\UrlValidationBehaviour.cs" />
+    <Compile Include="Views\LoginView.xaml.cs">
+      <DependentUpon>LoginView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AboutView.xaml.cs">
+      <DependentUpon>AboutView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SettingsView.xaml.cs">
+      <DependentUpon>SettingsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormGroupForms.xaml.cs">
+      <DependentUpon>FormGroupForms.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormGroupLists.xaml.cs">
+      <DependentUpon>FormGroupLists.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms.xaml.cs">
+      <DependentUpon>Forms.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ListOfFormsView.xaml.cs">
+      <DependentUpon>ListOfFormsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProcessFormsMaster.xaml.cs">
+      <DependentUpon>ProcessFormsMaster.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainViewsMasters.xaml.cs">
+      <DependentUpon>MainViewsMasters.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ExtendedViewCell.cs" />
+    <Compile Include="Controls\IUserPreference.cs" />
+    <Compile Include="Controls\MenuFactory.cs" />
+    <Compile Include="Controls\UserPreferences.cs" />
+    <Compile Include="ViewModels\AboutViewModel.cs" />
+    <Compile Include="Models\AboutModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LoginView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AboutView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SettingsView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FormGroupForms.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FormGroupLists.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ListOfFormsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProcessFormsMaster.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainViewsMasters.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Acs.Common.Util\Acs.Common.Util\Acs.Common.Util.csproj">
+      <Project>{60e9d83d-6d95-49ff-817b-ddfc91676c4b}</Project>
+      <Name>Acs.Common.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Acs.Domain\Acs.Domain.Models\Acs.Domain.Models.csproj">
+      <Project>{e9794d35-a15d-47ed-82d7-826cc96ee779}</Project>
+      <Name>Acs.Domain.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Acs.Services\Acs.Services\Acs.Services.csproj">
+      <Project>{6d7515ae-2183-46de-9f68-d640c9e90348}</Project>
+      <Name>Acs.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

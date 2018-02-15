@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Local.View:ViewBase xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="Acs.Mobile.ESig.Views.SettingsView"
+     x:TypeArguments="Local.ViewModel:LoginViewModel"
+     xmlns:Local.View="clr-namespace:Acs.Mobile.ESig.Views.Base"
+      xmlns:Local.ViewModel="clr-namespace:Acs.Mobile.ESig.ViewModels"
+        xmlns:res="clr-namespace:Acs.Mobile.ESig.Resources"
+    >
+
+     
+          <StackLayout Padding="10,10,10,0">
+       <StackLayout VerticalOptions="Center">
+    <ActivityIndicator x:Name="ac" IsRunning="true" IsVisible="false" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Color="{res:Translate ActivityIndicatorColor}"></ActivityIndicator>
+            </StackLayout>
+      <StackLayout  x:Name="stkFinal">  
+    <StackLayout Padding="0,30,0,0">
+    <Label FontSize="12" Text="URL"></Label>
+        <Entry x:Name="passportServerURLEntry" HeightRequest="40" Text="https://passport-lab.accessefm.com"></Entry>
+    </StackLayout>
+
+    <StackLayout Padding="0,10,0,0">
+    <Label FontSize="12" Text="Domain Name"></Label>
+        <Entry x:Name="domainNameEntry" HeightRequest="40" Text="accessefm"></Entry>
+    </StackLayout>
+    <StackLayout  Padding="0,10,0,0">
+			<Label x:Name="errorMsgLabel"></Label>
+    <Label Text="Use System Browser"></Label>
+        <Switch HorizontalOptions="Start"></Switch>
+    </StackLayout>
+    <StackLayout  Padding="0,20,0,0">
+    <Button x:Name="btnSave" BackgroundColor="{res:Translate ButtonColor}" TextColor="White" Text="Save"></Button>
+    </StackLayout>
+            </StackLayout>
+            </StackLayout>
+	
+</Local.View:ViewBase>

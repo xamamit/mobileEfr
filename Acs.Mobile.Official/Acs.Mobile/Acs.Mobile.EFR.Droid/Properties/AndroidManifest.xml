@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.AccessEforms.EFR">
+	<!--Versions of the Sdk necessary to properly run this app-->
+	<uses-sdk android:targetSdkVersion="23" android:minSdkVersion="17" />
+	<!--Permissions the app will have or request permissions from the user-->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.FLASHLIGHT" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<application android:label="Access EFR"></application>
+</manifest>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Local.View:ViewBase
+    x:Class="Acs.Mobile.EFR.Views.ListOfFormsView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:Local.View="clr-namespace:Acs.Mobile.EFR.Views.Base"
+    xmlns:Local.ViewModel="clr-namespace:Acs.Mobile.EFR.ViewModels"
+    x:TypeArguments="Local.ViewModel:LoginViewModel">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <ActivityIndicator
+                    x:Name="ac"
+                    HorizontalOptions="CenterAndExpand"
+                    IsRunning="true"
+                    IsVisible="true"
+                    VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+
+            <StackLayout
+                x:Name="stkFinal"
+                Padding="0,10,0,0"
+                IsVisible="false"
+                VerticalOptions="FillAndExpand">
+
+                <!--  Select All Checkbox  -->
+                <StackLayout
+                    Padding="7,0,7,0"
+                    IsVisible="true"
+                    Orientation="Horizontal"
+                    Spacing="7">
+                    <Image
+                        x:Name="selectAllForms"
+                        IsEnabled="true"
+                        IsVisible="true"
+                        Source="checkbox" />
+                    <Label Text="Select All Forms" VerticalTextAlignment="Center" />
+                </StackLayout>
+
+                <ListView
+                    x:Name="listForms"
+                    Margin="0,20,0,0"
+                    CachingStrategy="RecycleElement"
+                    HasUnevenRows="true"
+                    IsPullToRefreshEnabled="false">
+
+                    <!--  Each checkbox in the list  -->
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout
+                                    Padding="7,7,7,7"
+                                    Orientation="Horizontal"
+                                    Spacing="7">
+                                    <Image
+                                        x:Name="selectSingleForms"
+                                        IsEnabled="false"
+                                        IsVisible="true"
+                                        Source="{Binding UnShow, Mode=TwoWay}" />
+                                    <Label
+                                        x:Name="lblUrl"
+                                        Text="{Binding FormName}"
+                                        VerticalTextAlignment="Center" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <!--  Process Forms Button  -->
+                <Button
+                    x:Name="btnProcessForms"
+                    IsEnabled="true"
+                    Text="Process Forms"
+                    TextColor="White" />
+            </StackLayout>
+        </StackLayout>
+
+    </ContentPage.Content>
+</Local.View:ViewBase>
